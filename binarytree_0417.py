@@ -129,9 +129,9 @@ class BinarySearchTree(object):
 
     def level_order_traversal(self):
         def _level_order_traversal(root):
-            queue = [root]
+            queue = [root]  # 큐 형태로 한 레벨의 좌~우 다 돌고
             while queue:
-                root = queue.pop(0)
+                root = queue.pop(0)  # 좌부터 출력을 해준다.
                 if root is not None:
                     print(root.data)
                     if root.left:
